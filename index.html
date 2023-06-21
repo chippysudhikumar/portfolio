@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6770b70cd3.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="/images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p><br>
+            <h2>Hi, I'm <span>Chippy</span><br> Sudhikumar</h2>
+        </div>
+    </div>
+</div> 
+<!---  -------about------  --->
+<div id="about">
+    <div class="container">
+        <div class="row">
+        <div class="about-col-1">
+            <img src="images/programming-skills.png" >
+        </div>
+        <main class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p> A self-thought web developer Bcom student looking for an opportunity in <br>web development, who is committed to study web development to fulfill<br> my life with wonderful memeories and knowledge </p>
+
+                  <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                    <!-- HTML -->
+      <div class="skill-container">
+        <span>HTML</span>
+        <div class="html skill-bar">
+          <div class="skill-percentage">
+            <span class="tooltip">90%</span>
+          </div>
+        </div>
+      </div>
+      <!-- CSS -->
+      <div class="skill-container">
+        <span>CSS</span>
+        <div class="css skill-bar">
+          <div class="skill-percentage">
+            <span class="tooltip">65%</span>
+          </div>
+        </div>
+      </div>
+      <!-- node js -->
+      <div class="skill-container">
+        <span>Node</span>
+        <div class="node js skill-bar">
+          <div class="skill-percentage">
+            <span class="tooltip">50%</span>
+          </div>
+        </div>
+      </div>
+      <!-- JS -->
+      <div class="skill-container">
+        <span>JavaScript</span>
+        <div class="js skill-bar">
+          <div class="skill-percentage">
+            <span class="tooltip">75%</span>
+          </div>
+        </div>
+      </div>
+      <!-- REACT -->
+      <div class="skill-container">
+        <span>React</span>
+        <div class="react skill-bar">
+          <div class="skill-percentage">
+            <span class="tooltip">50%</span>
+          </div>
+        </div>
+      </div>
+</div>
+
+                
+                  <div class="tab-contents" id='experience'>
+                    <ul>
+                        <li><span>MERN STACK Developer</span><br>INTERN</li>
+                        <li><span>FRONT END Developer</span><br>INTERN</li>
+                    
+                    </ul>
+                  </div>
+                  <div class="tab-contents"  id='education'>
+                    <ul>
+                        <li><span>Higher Secondary - 2016 <br></span><br>JANATHA HIGHER SECONDARY SCHOOL</li>
+                        <li><span>Bachelors Degree - 2019<br></span><br>K.T.C.T COLLEGE OF ARTS AND SCIENCE</li>
+                        
+                    </ul>
+                  </div>
+                </main>
+
+        </div>
+        </div>
+    </div>
+</div> 
+
+<!----- --portfolio ----- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>NETFLIX CLONE</h3>
+
+                         <a href="https://alitafox.github.io/netflix_clone/"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>NODE LOGIN</h3>
+                    
+                         <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>NETFLIX</h3>
+                    
+                         <a href="https://www.google.com/search?q=mongodb+atlas&oq=&aqs=chrome.3.35i39i362i523l4.3313j0j4&sourceid=chrome&ie=UTF-8"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------contact-------->
+
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>0123456987</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/chippy-undefined-a1941227b"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/chippysudhikumar"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form id="submit-form" action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <input type="text" name="Mobile" placeholder="Your mobile number" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit"class="btn btn2">Submit</button> 
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Chippy. Made by <i class="fa-solid fa-heart"></i>Chippy Sudhikumar</p>
+    </div>
+</div>
+        
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbxrJljtteoKoa-0G-UD3nHdSPlbOz5lUDQGBfdb1zieaCbZqvtcPxXlOjbbwM13dlJE/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+    
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
+</body>
+
+</html>
