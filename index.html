@@ -4,234 +4,285 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/6770b70cd3.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c91f8d0b04.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            
-            <ul id="sidemenu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>Web Developer</p><br>
-            <h2>Hi, I'm <span>Chippy</span><br> Sudhikumar</h2>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/COURSE HEADER.jpg"logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a> </li>
+                    <li><a href="#about">About</a> </li>
+                    <!----
+                    <li><a href="#services">Services</a> </li>
+                    --->
+                    <li><a href="#portfolio">Portfolio</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>HI,i'm <span>CHIPPY</span><br>SUDHIKUMAR</h1>
+                <p><span>MERN</span> STACK Developer</p>
+            </div>
         </div>
     </div>
-</div> 
-<!---  -------about------  --->
-<div id="about">
-    <div class="container">
-        <div class="row">
-        <div class="about-col-1">
-            <img src="images/peakpx (1).jpg" >
-        </div>
-        <main class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p> A self-thought web developer Bcom student looking for an opportunity in <br>web development, who is committed to study web development to fulfill<br> my life with wonderful memeories and knowledge </p>
+    <!--   ----------about---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/peakpx (1).jpg">
+                </div>
+                <main class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Highly motivated and determined MERN stack developer with a
+                        passion for building high-quality web applications. Seeking a
+                        challenging and dynamic work environment where I can utilize my
+                        skills and experience to build innovative web applications and
+                        contribute to the growth and success of the company. Eager to
+                        learn and grow as a developer and make a meaningful impact
+                        through my work.</p>
 
-                  <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links"onclick="opentab('education')">Education</p>
-                  </div>
-                  <div class="tab-contents active-tab" id="skills">
-                    <!-- HTML -->
-      <div class="skill-container">
-        <span>HTML</span>
-        <div class="html skill-bar">
-          <div class="skill-percentage">
-            <span class="tooltip">90%</span>
-          </div>
-        </div>
-      </div>
-      <!-- CSS -->
-      <div class="skill-container">
-        <span>CSS</span>
-        <div class="css skill-bar">
-          <div class="skill-percentage">
-            <span class="tooltip">65%</span>
-          </div>
-        </div>
-      </div>
-      <!-- node js -->
-      <div class="skill-container">
-        <span>Node</span>
-        <div class="node js skill-bar">
-          <div class="skill-percentage">
-            <span class="tooltip">50%</span>
-          </div>
-        </div>
-      </div>
-      <!-- JS -->
-      <div class="skill-container">
-        <span>JavaScript</span>
-        <div class="js skill-bar">
-          <div class="skill-percentage">
-            <span class="tooltip">75%</span>
-          </div>
-        </div>
-      </div>
-      <!-- REACT -->
-      <div class="skill-container">
-        <span>React</span>
-        <div class="react skill-bar">
-          <div class="skill-percentage">
-            <span class="tooltip">50%</span>
-          </div>
-        </div>
-      </div>
-</div>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links"onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
 
-                
-                  <div class="tab-contents" id='experience'>
-                    <ul>
-                        <li><span>MERN STACK Developer</span><br>INTERN</li>
-                        <li><span>FRONT END Developer</span><br>INTERN</li>
-                    
-                    </ul>
-                  </div>
-                  <div class="tab-contents"  id='education'>
-                    <ul>
-                        <li><span>Higher Secondary - 2016 <br></span><br>JANATHA HIGHER SECONDARY SCHOOL</li>
+                        <!-- HTML -->
+                        <div class="skill-container">
+                          <span>HTML</span>
+                          <div class="html skill-bar">
+                            <div class="skill-percentage">
+                              <span class="tooltip">90%</span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- CSS -->
+                        <div class="skill-container">
+                          <span>CSS</span>
+                          <div class="css skill-bar">
+                            <div class="skill-percentage">
+                              <span class="tooltip">85%</span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- SASS -->
+                        <div class="skill-container">
+                          <span>NODE</span>
+                          <div class="sass skill-bar">
+                            <div class="skill-percentage">
+                              <span class="tooltip">90%</span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- JS -->
+                        <div class="skill-container">
+                          <span>JavaScript</span>
+                          <div class="js skill-bar">
+                            <div class="skill-percentage">
+                              <span class="tooltip">75%</span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- REACT -->
+                        <div class="skill-container">
+                          <span>React JS</span>
+                          <div class="react skill-bar">
+                            <div class="skill-percentage">
+                              <span class="tooltip">60%</span>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>MERN?STACK</span><br>During my internship at Avodha, I taught myself
+                                    multiple programming languages and technologies,
+                                    demonstrating my ability to learn and adapt to new
+                                    challenges independently.</li>
+                                <li><span>MERN?STACK</span><br>Weekly code reviews and feedback sessions significantly
+                                    strengthened my technical skills, allowing me to
+                                    develop a strong understanding of best practices and
+                                    gain valuable experience working with a team.</li>
+                                <li><span>MERN?STACK</span><br>Provided one-on-one mentorship and feedback to junior
+                                    colleagues to improve their presentation skills.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Higher Secondary - 2016 <br></span><br>JANATHA HIGHER SECONDARY SCHOOL</li>
                         <li><span>Bachelors Degree - 2019<br></span><br>K.T.C.T COLLEGE OF ARTS AND SCIENCE</li>
-                        
-                    </ul>
-                  </div>
-                </main>
-
-        </div>
+                            </ul>
+                        </div>
+                    </main>
+                </div>
+            </div>
         </div>
     </div>
-</div> 
-
-<!----- --portfolio ----- -->
-<div id="portfolio">
+    <!----------services---------
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>
+                        Weekly code reviews and feedback sessions significantly
+                          strengthened my technical skills, allowing me to
+                          develop a strong understanding of best practices and
+                          gain valuable experience working with a team</p>
+                         <a href="#">Learn More</a> 
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Node Developer</h2>
+                    <p>
+                        Weekly code reviews and feedback sessions significantly
+                          strengthened my technical skills, allowing me to
+                          develop a strong understanding of best practices and
+                          gain valuable experience working with a team</p>
+                         <a href="#">Learn More</a> 
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>React Developer</h2>
+                    <p>
+                        Weekly code reviews and feedback sessions significantly
+                          strengthened my technical skills, allowing me to
+                          develop a strong understanding of best practices and
+                          gain valuable experience working with a team</p>
+                         <a href="#">Learn More</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+   <!----------------portflio----------------------->
+   <div id="portfolio">
     <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png">
-                <div class="layer">
-                    <h3>NETFLIX CLONE</h3>
-
-                         <a href="https://alitafox.github.io/netflix_clone/"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>the app connnects you the talented people around the world.
+                            Download it from palystore </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="work">
-                <img src="images/work-2.png">
-                <div class="layer">
-                    <h3>NODE LOGIN</h3>
-                    
-                         <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>the app connnects you the talented people around the world.
+                            Download it from palystore </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="work">
-                <img src="images/work-3.png">
-                <div class="layer">
-                    <h3>NETFLIX</h3>
-                    
-                         <a href="https://www.google.com/search?q=mongodb+atlas&oq=&aqs=chrome.3.35i39i362i523l4.3313j0j4&sourceid=chrome&ie=UTF-8"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>NetFlix Clone</h3>
+                        <p>the app connnects you the talented people around the world.
+                            Download it from palystore </p>
+                            <a href="https://alitafox.github.io/netflix_clone/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
-            </div>
         </div>
         <a href="#" class="btn">See more</a>
     </div>
-</div>
-<!-------contact-------->
-
-<div class="contact">
-    <div class="container">
+   </div>
+   <!-----------------contact----------------->
+   <div id="contact">
+       <div class="container">
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>chippyy198@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> chippyy198@gmail.com</p>
                 <p><i class="fa-solid fa-square-phone"></i>6235400949</p>
                 <div class="social-icons">
                     <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
-                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/chippy-undefined-a1941227b"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/chippysudhikumar"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/muhammed-husain-s-963269274/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/MuhammedHussain33"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <a href="images/Resume.pdf" download class="btn btn2">Download Cv</a>
+                <a href="images/Resume.pdf" download class="btn btn2">Download CV </a>
             </div>
             <div class="contact-right">
                 <form id="submit-form" action="">
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="text" name="Email" placeholder="Your Email" required>
-                    <input type="text" name="Mobile" placeholder="Your mobile number" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit"class="btn btn2">Submit</button> 
+                    <button type="submit" class="btn btn2">Submit</button>
                 </form>
                 <span id="msg"></span>
             </div>
         </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright @Chippy. Made by <i class="fa-solid fa-heart"></i>Chippy Sudhikumar</p>
-    </div>
-</div>
-        
-<script>
+       </div>
+       <div class="copyright">
+        <p>Copyrights @ Chippy.<i class="fa-solid fa-heart"></i>Made by Chippy</p>
+       </div>
+   </div>
+    <script>
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link")
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-
-</script>
-<script>
-
-    var sidemeu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemeu.style.right = "0";
-    }
-    function closemenu(){
-        sidemeu.style.right = "-200px";
-    }
-
-</script>
-<script>
-    $("#submit-form").submit((e)=>{
-        e.preventDefault()
-        $.ajax({
-            url:"https://script.google.com/macros/s/AKfycbxrJljtteoKoa-0G-UD3nHdSPlbOz5lUDQGBfdb1zieaCbZqvtcPxXlOjbbwM13dlJE/exec",
-            data:$("#submit-form").serialize(),
-            method:"post",
-            success:function (response){
-                alert("Form submitted successfully")
-                window.location.reload()
-    
-            },
-            error:function (err){
-                alert("Something Error")
-
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
             }
-        })
-    })
-</script>
-</body>
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
 
+    </script>
+    <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0"
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px"
+            }
+
+    </script>
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbxrJljtteoKoa-0G-UD3nHdSPlbOz5lUDQGBfdb1zieaCbZqvtcPxXlOjbbwM13dlJE/exec"
+,
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+    
+</body>
 </html>
